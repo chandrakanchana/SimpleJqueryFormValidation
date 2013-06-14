@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Jquery Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- styles -->
+    <link href="css/bootstrap.css" rel="stylesheet" />    
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/registerform.css" />
+	
+    
+
+    <!--  fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico" />
+    
+  </head>
+  
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Simple Jquery Form Validation</a>
+          <div class="nav-collapse">         
+            <div class="navbar-text pull-right ui-widget"><a href="#" style="color:white; font-size:18px; text-decoration:none"></a></div>
+          </div><!--/.nav-collapse -->		  
+        </div>
+      </div>
+    </div> 
+    
+      <div id="form">
+	
+		 <form id="registerform" name="registerform" method="post" action="" target='_parent'>					
+            <h2>Simple Jquery Form Validation</h2>
+			  <div class="fields">
+					<label for="name"> First name</label><input id="first_name" type="text" name="first_name" value="" />
+					<label for="name">Last name</label><input id="last_name" type="text" name="last_name" value=""  /><span></span>
+                    <label for="gender">Gender</label><input id="male" type="radio" name="gender"/>&nbsp;Male &nbsp; <input id="female" type="radio" name="gender" />&nbsp;Female</span>
+					<br />
+					<label for="gender" class="error" style="display:none!important">Please select your gender.</label>					
+					<label for="email">Email</label><input id="email" type="text" name="email" value="" />
+                    <label for="phone">Phone</label><input id="phone" type="text" name="phone" value="" /> 
+					<label for="employees">Qualification </label><select name="qualification">
+                          <option value=""></option>
+						  <option value="MCA">MCA</option>
+						  <option value="MBA">MBA</option>
+						  <option value="BTECH">BTECH</option>
+						  <option value="BSc">BSc</option>
+				    </select>
+					<label for="address"> Address </label><textarea id="address" type="text" name="address" rows="3" cols="1"></textarea> 
+					<label for="postal_code">Postal code </label><input id="postal_code" type="text" name="postal_code" value=""  />
+					<label for="comments">About Yourself </label><textarea name="about" id="about" rows="3" cols="1"  ></textarea>
+                    <label for="agree" style="margin-left:18px;">Please agree to our policy</label>
+			            <input type="checkbox" class="checkbox" id="agree" name="agree" size="20" style="margin-top:-40px; margin-left:-1px;" />
+			        
+					<br /><br /><input type="submit" name="submit" value="Submit" class="btn" /><span class="loading"></span>
+             </div>
+		</form>
+   </div>
+	 
+     
+
+
+    <!--  javascript files
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	
+	<script src="js/jquery.js"></script>	
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/registerform.js"></script>	
+</body>
+</html>

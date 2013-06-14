@@ -1,0 +1,61 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+    }
+	.sidebar-nav {
+        padding: 9px 0;
+      }
+    
+/** 
+ * Style rules for Demo page
+ */
+* {
+  margin:0;
+  padding:0;
+  font:normal 11px Verdana, Geneva, sans-serif;
+  color:#ccc;
+}
+a {
+  color: #fff;
+  font-weight:bold;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:underline;
+}
+body {
+ background:#393737 ;
+}
+
+#footer {
+  height:100px;
+}
+#footer p {
+  margin:30px auto 0 auto;
+  display:block;
+  width:560px;
+  height:40px;
+}
+
+
+	
+#registerform label.error {
+	margin-left: 10px;
+	width: auto;
+	color:red;
+}
+	
+#registerform h2{
+	 text-align:center;
+}
+	
+#form{
+	background-color:#ffffff;
+	width:580px;
+	margin:0 auto	
+}	
+    
+.fields{
+	margin-left:170px; 
+	margin-top:20px;
+}
